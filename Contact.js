@@ -13,3 +13,8 @@ const contactSchema = new mongoose.Schema({
 const Contact = mongoose.model('Contact', contactSchema);
 
 module.exports = Contact;
+
+function showTab(tabName) {
+	var i, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName
+}
