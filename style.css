@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #FF5A5F;
+}
+
+nav #logo {
+    margin-right: auto;
+    width: 300px;
+    height: auto;
+}
+
+
+nav .menu-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    nav .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    nav ul li {
+        margin: 0;
+        width: 100%;
+    }
+
+    nav ul li a {
+        text-align: center;
+        padding: 15px;
+        display: block;
+    }
+
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+#hero {
+    background-color: #f5f5f5;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 48px;
+    font-family: 'Playfair Display SC', serif;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+#hero p {
+    font-size: 24px;
+    margin-bottom: 50px;
+    color: #555;
+}
+
+#hero .button {
+    background-color: #FF5A5F;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+}
+
+#hero .button:hover {
+    background-color: #FF868B;
+}
+
+
+#notable-alumni {
+    background-color: white;
+    padding: 50px 0;
+
+}
+
+#notable-alumni h2 {
+    font-family: 'Playfair Display SC', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#notable-alumni ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#notable-alumni li {
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+
+}
+
+#notable-alumni li img {
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#notable-alumni li h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-style: italic;
+    margin: 20px;
+}
+
+#notable-alumni li p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 10px 20px;
+}
+
+
+#career-resources {
+    margin: 50px 0;
+    padding: 0 20px;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  #career-resources h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: 30px;
+    color: #333;
+  }
+  
+  #career-resources p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #career-resources ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+  }
+
+  #career-resources ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #career-resources ul li {
+    margin: 0 10px;
+  }
+  
+  #career-resources ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5A5F;
+    color: white;
+    text-decoration: none;
+  }
+  
+  #career-resources li {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  #career-resources li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #career-resources li a:hover {
+    background-color: #FF868B;
+  }
+  
+  #career-resources .career-buttons {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  #career-resources .career-buttons a:first-child {
+    margin-right: 20px;
+  }
+
+
+  
+
+  #events {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #events h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  #events p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #events ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #events li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+  }
+  
+  #events li h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  #events li p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  #events li a.button {
+    background-color: #FF5A5F;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #events li a.button:hover {
+    background-color: #FF868B;
+  }
+  
+  #events li::before {
+    content: "";
+    border-style: solid;
+    border-width: 0 15px 15px 0;
+    border-color: transparent #f8f8f8 transparent transparent;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+  }
+  
+
+  #news-updates {
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+  }
+  
+  #news-updates h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  #news-updates ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin: 50px auto;
+    width: 80%;
+  }
+  
+  #news-updates li {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+  
+  #news-updates li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  #news-updates li h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #news-updates li p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  #news-updates li .button {
+    background-color: #FF5A5F;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  #news-updates li .button:hover {
+    background-color: #FF868B;
+  }
+  
+
+/* Contact section */
+#contact {
+  padding: 50px;
+  background-color: #f8f8f8;
+  
+}
+
+#contact h2 {
+  color: #333333;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact label {
+  color: #777777;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#contact input,
+#contact textarea {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  color: #333333;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  border-color: #777777;
+}
+
+#contact button {
+  background-color: #FF5A5F;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button:hover {
+  background-color: #FF868B;
+}
+
+#events h2 {
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+#events h2::before {
+  content: "\25BC";
+  font-size: 18px;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#events.active h2::before {
+  content: "\25B2";
+}

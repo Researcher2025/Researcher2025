@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MMCOE Alumni Login Page</title>
+	<style>
+		body {
+			font-family: 'Open Sans', sans-serif;
+			background-color: white;
+		}
+		form {
+			background-color: white;
+			border: 1px solid #CCCCCC;
+			padding: 30px;
+			max-width: 500px;
+			margin: 50px auto;
+			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+			border-radius: 10px;
+		}
+		h2 {
+			font-size: 32px;
+			margin-bottom: 20px;
+			text-align: center;
+			color: #0066CC;
+		}
+		input[type="text"], input[type="password"] {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			width: 100%;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+			background-color: #F5F5F5;
+			color: #333333;
+			font-size: 16px;
+		}
+		input[type="submit"] {
+			background-color: #0066CC;
+			color: #FFFFFF;
+			padding: 12px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			width: 100%;
+			font-size: 18px;
+			transition: background-color 0.3s;
+		}
+		input[type="submit"]:hover {
+			background-color: #0052A3;
+		}
+		.login-type {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+		.login-type a {
+			background-color: #0066CC;
+			color: #FFFFFF;
+			padding: 12px;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-right: 10px;
+			font-size: 16px;
+			text-align: center;
+			flex: 1;
+			max-width: 150px;
+			transition: background-color 0.3s;
+			text-decoration: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.login-type a:hover {
+			background-color: #0052A3;
+		}
+		.login-type a.student {
+			background-color: #CCCCCC;
+			color: #333333;
+		}
+		.login-type a.student:hover {
+			background-color: #AAAAAA;
+		}
+		.logo {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 40px;
+		}
+		.logo img {
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<div class="logo">
+			<img src="college_logo.png" alt="Logo">
+		</div>
+		<h2>Alumni Login</h2>
+		<input type="text" placeholder="Email-ID">
+		<input type="password" placeholder="Password">
+		<input type="submit" value="Log In">
+		<div class="login-type">
+			<a href="#" class="student">Student Login</a>
+			

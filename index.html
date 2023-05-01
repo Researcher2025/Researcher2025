@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MMCOE Alumni Portal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,300&family=Playfair+Display&family=Playfair+Display+SC:ital@1&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function smoothScroll(target) {
+            var element = document.getElementById(target);
+            element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="https://www.mmcoe.edu.in/"><img src="college_logo.png" alt="College Logo" id="logo"></a>
+            <ul>
+                <li><a href="#" onclick="smoothScroll('hero')">Home</a></li>
+                <li><a href="#" onclick="smoothScroll('notable-alumni')">Notable Alumni</a></li>
+                <li><a href="#" onclick="smoothScroll('news-updates')">News and Updates</a></li>
+                <li><a href="#" onclick="smoothScroll('events')">Events</a></li>
+                <li><a href="#" onclick="smoothScroll('contact')">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome to MMCOE Alumni Portal</h1>
+            <p>Connect with fellow alumni, find job opportunities, and stay up-to-date on the latest news from your alma
+                mater.</p>
+            <a href="Loginpage.html" class="button">Get Started</a>
+        </section>
+
+        <section id="notable-alumni">
+            <h2>Notable Alumni</h2>
+            <ul>
+              <li>
+                <img src="notable alumni 1.png" alt="Notable Alumni 1">
+                <h3>Tejas Mesta</h3>
+                <p>Class of 2023</p>
+                <p>Placed in Deutsche Bank with CTC of <h4>51 LPA</h4></p>
+              </li>
+              <li>
+                <img src="notable alumni 2.jpeg" alt="Notable Alumni 2">
+                <h3>Atharva Mahadeokar</h3>
+                <p>Class of 2021</p>
+                <p>Placed in Rakuten Group in Tokyo, Japan with CTC of <h4>33 LPA</h4></p>
+              </li>
+              <li>
+                <img src="notable alumni 3.jpeg" alt="Notable Alumni 3">
+                <h3>Shweta Kothawade</h3>
+                <p>Class of 2021</p>
+                <p>Volkswagen Group Technology Solutions India</p>
+              </li>
+              <!-- can add more here -->
+            </ul>
+          </section>
+          
+
+        <!-- <section id="career-resources">
+            <h2>Career Resources</h2>
+            <p>Find job opportunities, get career advice, and network with alumni in your field.</p>
+            <ul>
+                <li><a href="#">Job Board</a></li>
+                <li><a href="#">Career Advice</a></li>
+                <li><a href="#">Networking Events</a></li>
+            </ul>
+        </section> -->
+
+        <section id="news-updates">
+            <h2>News and Updates</h2>
+            <ul>
+                <li>
+                    <h3>College Launches New Scholarship Program</h3>
+                    <p>Availed thruogh various entrance exams and schemes.
+                    </p>
+                    <a href="#" class="button">Read More</a>
+                </li>
+                <li>
+                    <h3>Alumni Association Hosts Annual Networking Event</h3>
+                    <p>information briefing by alumni regarding career domains to undergraduate students.
+                    </p>
+                    <a href="#" class="button">Read More</a>
+                </li>
+                <!-- can add more here -->
+            </ul>
+        </section>
+
+        <section id="events">
+            <h2>Events</h2>
+            <p>Stay up-to-date on upcoming alumni events and reunions.</p>
+            <ul>
+                <li>
+                    <h3>Class of 2010 Reunion</h3>
+                    <p>reunion of alumni for effective communication.
+                    </p>
+                    <p>Date: July 15, 2023</p>
+                    <p>Location: City, State</p>
+                    <a href="#" class="button">READ MORE</a>
+                </li>
+                <li>
+                    <h3>Alumni Happy Hour</h3>
+                    <p>events organized for effective interaction between undergraduate students and alumni.
+                    </p>
+                    <p>Date: May 10, 2023</p>
+                    <p>Location: City, State</p>
+                    <a href="#" class="button">READ MORE</a>
+                </li>
+                <!-- can add more here -->
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>FEEDBACK</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><h2>Marathwada Mitra Mandal's College of Engineering</h2></p>
+        <p><h4>Survey No. 18, Plot No. 5/3, Near Vandevi Temple,
+            <p> Karvenagar, Pune 411052.</p>
+            <br>
+          <p><b>Phone number</b>:(020) 25479811, 25479812, 7720097780, 7720097781, 7720097782</p>  
+            
+           <p> Extn Nos.:202,204, 206</p>
+            
+            Email :mmcoe@mmcoe.edu.in, principal@mmcoe.edu.in</h4></p>
+        <p>&copy; MMCOE Alumni Portal | All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
