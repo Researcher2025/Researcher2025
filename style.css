@@ -157,7 +157,7 @@ nav .menu-icon {
 #notable-alumni li img {
     width: 100%;
     height: 200px;
-    border-radius: 50%;
+    /* border-radius: 100%; */
     object-fit: cover;
 }
 
