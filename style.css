@@ -488,3 +488,28 @@ nav .menu-icon {
 #events.active h2::before {
   content: "\25B2";
 }
+
+
+footer {
+  background-color: #6c6c6c;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+footer p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+footer a:hover {
+  color: #FF5A5F;
+}
