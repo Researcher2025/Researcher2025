@@ -3,33 +3,29 @@
 <head>
 	<title>MMCOE Alumni Login Page</title>
 	<link rel="stylesheet" href="style 2.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div class="container">
-		<div class="logo">
-			<a href="index.html"> <img src="college_logo.png" alt="Logo"></a>
+	<header>
+		<div class="container">
+			<a href="index.html"> <img src="college_logo.png" align="left" height="380" width="200"></a>
+			<h1>User Login</h1>
 		</div>
-		<div class="login-tabs">
-			<button class="active" onclick="showTab('alumni')">Alumni Login</button>
-			<button onclick="showTab('student')">Student Login</button>
-		</div>
-		<div id="alumni" class="login-tab">
-			<h2>Student Login</h2>	
-			<form>
-				<input type="text" placeholder="Email-ID">
-				<input type="password" placeholder="Password">
-				<input type="submit" value="Log In">
+	</header>
+	<section class="login">
+		<div class="container">
+			<form action="#" method="post">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" placeholder="Enter your email">
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" placeholder="Enter your password">
+				<input type="submit" value="Login">
 			</form>
+			<div class="register">
+				<p>Not registered yet? <a href="https://docs.google.com/a/mmcoe.edu.in/forms/d/e/1FAIpQLSex739CWTM4_saPAdCKnlqOz-sLL1OFE4rLxJjS-IpC2pVxQw/viewform?embedded=true" target="_blank" >Click here to register</a></p>
+			</div>
 		</div>
-		<div id="student" class="login-tab" style="display:none">
-			<h2>Student Login</h2>
-			<form>
-				<input type="text" placeholder="Roll No.">
-				<input type="password" placeholder="Password">
-				<input type="submit" value="Log In">
-			</form>
-		</div>
-	</div>
-	<script src="Contact.js"></script>
+	</section>
 </body>
 </html>
