@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Job Opening</title>
+	<link rel="stylesheet" type="text/css" href="css/addjob.css">
+</head>
+<body>
+	<header>
+		<!--<img src="college_logo.png"  height="100" width="270">-->
+		
+			<center><h1>Create a Job Opening</h1></center>
+		
+	</header>
+
+	<section id="add-job-opening">
+		<center><h2>Add Details about the Job</h2></center>
+		<form>
+			<label for="job-title">Job Title:</label>
+			<input type="text" id="job-title" name="job-title" required>
+
+			<label for="job-description">Job Description:</label>
+			<textarea id="job-description" name="job-description" required></textarea>
+
+			<label for="responsibilities">Responsibilities:</label>
+			<textarea id="responsibilities" name="responsibilities" required></textarea>
+
+			<label for="salary">Salary:</label>
+			<input type="text" id="salary" name="salary" required>
+
+			<label for="location">Location:</label>
+			<input type="text" id="location" name="location" required>
+
+			<label for="requirements">Requirements:</label>
+			<textarea id="requirements" name="requirements" required></textarea>
+
+			<input type="submit" value="Submit">
+		</form>
+	</section>
+
+	<script src="script.js"></script>
+</body>
+</html>
