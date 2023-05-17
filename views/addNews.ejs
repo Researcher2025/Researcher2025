@@ -15,18 +15,12 @@
 
 	<section id="news-form">
 		<h2>Add News</h2>
-		<form action="/addNews" method="POST">
-			<label for="title">Title:</label>
-			<input type="text" id="title" name="title" required>
-
-			<label for="date">Date:</label>
-			<input type="date" id="date" name="date" required>
-
-			<label for="content">Content:</label>
-			<textarea id="content" name="content" rows="6" required></textarea>
-
+		<form action="/addNews" method="post">
+			<input type="text" name="subject" placeholder="Subject">
+			<textarea name="description" placeholder="Description"></textarea>
+			<input type="date" name="date" placeholder="Date">
 			<button type="submit">Add News</button>
-		</form>
+		  </form>
 	</section>
 
 	<section id="news-list">
@@ -46,5 +40,25 @@
 		</ul>
 	</section>
 	</main>
+	<!-- <script>
+		const jsonData = {
+		subject: 'Breaking News',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		date: new Date().toISOString()
+		};
+
+		fetch('/addNews', {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json'
+		},
+		body: JSON.stringify(jsonData)
+		})
+		.then(response => response.json())
+		.then(data => console.log(data))
+		.catch(error => console.error(error));
+
+
+	</script> -->
 </body>
 </html>

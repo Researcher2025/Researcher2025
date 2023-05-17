@@ -12,23 +12,20 @@
 
 	<section id="add-event">
 		<center><h2>Add details about the Event</h2></center>
-		<form>
+		<form action="/addEvent" method="post">
 			<label for="event-name">Event Name:</label>
-			<input type="text" id="event-name" name="event-name" required>
+			<input type="text" id="event-name" name="eventname" required>
 
 			<label for="event-date">Date:</label>
-			<input type="date" id="event-date" name="event-date" required>
-
-			<label for="event-time">Time:</label>
-			<input type="time" id="event-time" name="event-time" required>
+			<input type="date" id="event-date" name="eventdate" required>
 
 			<label for="event-location">Location:</label>
-			<input type="text" id="event-location" name="event-location" required>
+			<input type="text" id="event-location" name="eventlocation" required>
 
 			<label for="event-description">Description:</label>
-			<textarea id="event-description" name="event-description" required></textarea>
+			<textarea id="event-description" name="eventdescription" required></textarea>
 
-			<input type="submit" value="Add Event">
+			<button type="submit">Add Event</button>
 		</form>
 	</section>
 </body>

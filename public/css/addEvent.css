@@ -41,7 +41,7 @@ textarea {
 	border-radius: 3px;
 }
 
-input[type="submit"] {
+button {
 	padding: 5px;
 	background-color: #333;
 	color: #fff;
